@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>draw</title>
+		<style>
+			.nav{
+				width:450px;
+				height:50px;
+				position:fixed;
+				top:10px;
+				left:50%;
+				display:flex;
+				justify-content:center;
+				align-items:center;
+				transform:translateX(-50%);
+				background-color:#e1e1e1;
+			}
+			.clr{
+				width:30px;
+				height:30px;
+				border-radius:50%;
+				background-color:blue;
+				margin-radius:5px;
+				border:3px solid #fff;
+			}
+			.clr:hover{
+				transform:scale(1.2);
+			}
+			.clr:nth-child(1){
+				background-color:#000;
+			}
+			.clr:nth-child(2){
+				background-color:red;
+			}
+			.clr:nth-child(3){
+				background-color:orange;
+			}
+			.clr:nth-child(4){
+				background-color:yellow;
+			}
+			.clr:nth-child(5){
+				background-color:cyan;
+			}
+		</style>
+	<head>
+	<body>
+		<canvas id="canvas"></canvas>
+		<div class="nav">
+			
+			<div class="clr" data-clr="#000"></div>
+			<div class="clr" data-clr="red"></div>
+			<div class="clr" data-clr="orange"></div>
+			<div class="clr" data-clr="yellow"></div>
+			<div class="clr" data-clr="cyan"></div>
+			<button class="clear">clear</button>
+			<button class="save">save</button>
+			<select>
+				<option>Select line size</option>
+				<option value="5">5</option>
+				<option value="50">50</option>
+			</select>
+			<button class="select">select</button>
+		</div>
+		<script src="app.js"></script>
+	</body>
+</html>
